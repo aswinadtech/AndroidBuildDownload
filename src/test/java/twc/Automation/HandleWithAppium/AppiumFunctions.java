@@ -465,12 +465,12 @@ public class AppiumFunctions extends Drivers{
     		System.out.println("clicking the the download button");
     		logStep("clicking the the download button");
     		Ad.findElementById("dev.firebase.appdistribution:id/download_button").click();
-			Thread.sleep(20000);
+			Thread.sleep(120000);
     		System.out.println("clicking the the install button");
     		logStep("clicking the the install button");
 			Ad.findElementById("android:id/button1").click();
 			Thread.sleep(60000);
-			Thread.sleep(60000);
+		
      	}
      	
      	
