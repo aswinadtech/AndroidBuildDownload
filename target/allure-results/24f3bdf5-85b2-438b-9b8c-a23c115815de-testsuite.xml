@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1596623548373" stop="1596623833920" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1596623548491" stop="1596623648758" status="passed">
+            <name>downloadApkfromAppTester</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Automation.SmokeTestCases.ApkDowload"/>
+                <label name="testMethod" value="downloadApkfromAppTester"/>
+                <label name="host" value="AswinikumarsMBP.lan"/>
+                <label name="thread" value="2765@AswinikumarsMBP.lan.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596623648807" stop="1596623833796" status="passed">
+            <name>installApkinDevice</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Automation.SmokeTestCases.ApkDowload"/>
+                <label name="testMethod" value="installApkinDevice"/>
+                <label name="host" value="AswinikumarsMBP.lan"/>
+                <label name="thread" value="2765@AswinikumarsMBP.lan.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

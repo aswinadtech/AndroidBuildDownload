@@ -1,0 +1,232 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 26, Errors: 0, Skipped: 0, Time elapsed: 189.074 sec <<< FAILURE!
+Smoke_Test_CaseVerify_Factualapi_url(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.105 sec  <<< FAILURE!
+java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.validating_Fatual(Functions.java:3020)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url(smokeTestCases.java:70)
+
+Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.15 sec  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3466)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu(smokeTestCases.java:95)
+
+Smoke_Test_verifying_feed_1adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.096 sec  <<< FAILURE!
+java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5611)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_1adcall(smokeTestCases.java:105)
+
+Smoke_Test_verifying_feed_2adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 8.716 sec  <<< FAILURE!
+org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.getSize(RemoteWebDriver.java:914)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.Swipe_feed(AppiumFunctions.java:942)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.SwipeUp_Counter_feedcards(AppiumFunctions.java:810)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_2adcall(smokeTestCases.java:195)
+
+Smoke_Test_verifying_feed_3adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adcall(smokeTestCases.java:218)
+
+Smoke_Test_verifying_feed_4adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall(smokeTestCases.java:237)
+
+Smoke_Test_verifying_feed_5adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adcall(smokeTestCases.java:256)
+
+Smoke_Test_verifying_feed_6adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_6adcall(smokeTestCases.java:275)
+
+Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_card_iu_value(Functions.java:2376)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(smokeTestCases.java:296)
+
+Smoke_Test_Case_Verify_Video_adCalll(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_VideoCard_iu_value(Functions.java:2353)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll(smokeTestCases.java:315)
+
+Smoke_Test_CaseVerify_Today_details_page_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Today_detail_page_iu_value(Functions.java:2471)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu(smokeTestCases.java:351)
+
+Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.AirQuality_detailed_adcall_iu(Functions.java:2679)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu(smokeTestCases.java:370)
+
+Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Running_spotlight_adcall_iu(Functions.java:2553)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu(smokeTestCases.java:393)
+
+Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Boat_beach_detailpage_adcall_iu(Functions.java:2592)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu(smokeTestCases.java:413)
+
+Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Allergy_detailpage_adcall_iu(Functions.java:2614)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu(smokeTestCases.java:433)
+
+Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu(Functions.java:2636)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu(smokeTestCases.java:453)
+
+Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_SH_detailpage_adcall_iu(Functions.java:4670)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(smokeTestCases.java:473)
+
+Smoke_Test_Verify_hourly_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 8.71 sec  <<< FAILURE!
+org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Hourly}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.click_hourly_element(AppFunctions.java:2140)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:497)
+
+Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad1_adcall_iu(Functions.java:2765)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu(smokeTestCases.java:526)
+
+Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad2_adcall_iu(Functions.java:2787)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu(smokeTestCases.java:551)
+
+Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad3_adcall_iu(Functions.java:2809)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu(smokeTestCases.java:573)
+
+Smoke_Test_Verifying_feed1_pulltoreresh_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 8.578 sec  <<< FAILURE!
+org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)
+	at twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:919)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1_pulltoreresh_scenario(smokeTestCases.java:597)
+
+Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:613)
+
+Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:3721)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario(smokeTestCases.java:623)
+
+Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 8.565 sec  <<< FAILURE!
+org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Search}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.enter_requiredLocation(AppFunctions.java:2506)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario(smokeTestCases.java:662)
+
+Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario(smokeTestCases.java:674)
+

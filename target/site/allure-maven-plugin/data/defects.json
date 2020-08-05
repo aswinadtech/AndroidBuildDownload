@@ -1,0 +1,353 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ {
+      "uid" : "89e9840d323566a0",
+      "failure" : {
+        "message" : "AssertionError: https://location.wfxtriggers.com url was not trigred",
+        "stackTrace" : "java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat twc.Automation.General.Functions.validating_Fatual(Functions.java:3020)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url(smokeTestCases.java:70)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "e761f5e2d238762b",
+        "name" : "Smoke_Test_CaseVerify_Factualapi_url",
+        "title" : "Verifying Location/Factual  api call url",
+        "time" : {
+          "start" : 1595355157895,
+          "stop" : 1595355157995,
+          "duration" : 100
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    }, {
+      "uid" : "be757877622f3c78",
+      "failure" : {
+        "message" : "AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred",
+        "stackTrace" : "java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3466)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu(smokeTestCases.java:95)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "f4068fce311d2d03",
+        "name" : "Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu",
+        "title" : "Verifying Home screen marquee ad call",
+        "time" : {
+          "start" : 1595355158261,
+          "stop" : 1595355158411,
+          "duration" : 150
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    }, {
+      "uid" : "91a3915fa2c5d92e",
+      "failure" : {
+        "message" : "AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred",
+        "stackTrace" : "java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5611)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_1adcall(smokeTestCases.java:105)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "a0904d34e95d6f9",
+        "name" : "Smoke_Test_verifying_feed_1adcall",
+        "title" : "Verifying feed_1 ad call",
+        "time" : {
+          "start" : 1595355158412,
+          "stop" : 1595355158508,
+          "duration" : 96
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  }, {
+    "title" : "Test defects",
+    "status" : "BROKEN",
+    "defects" : [ {
+      "uid" : "e48dec11ed5452c7",
+      "failure" : {
+        "message" : "SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 20 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356",
+        "stackTrace" : "org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 20 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.getSize(RemoteWebDriver.java:914)\n\tat twc.Automation.HandleWithAppium.AppiumFunctions.Swipe_feed(AppiumFunctions.java:942)\n\tat twc.Automation.HandleWithAppium.AppiumFunctions.SwipeUp_Counter_feedcards(AppiumFunctions.java:810)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_2adcall(smokeTestCases.java:195)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "268ed2743c23db04",
+        "name" : "Smoke_Test_verifying_feed_2adcall",
+        "title" : "Verifying feed_2 ad call",
+        "time" : {
+          "start" : 1595355158508,
+          "stop" : 1595355167224,
+          "duration" : 8716
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    }, {
+      "uid" : "66fbe7d5964d6a19",
+      "failure" : {
+        "message" : "NullPointerException: null",
+        "stackTrace" : "java.lang.NullPointerException\n\tat twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)\n\tat twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adcall(smokeTestCases.java:218)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "b0abd02e2c630dd2",
+        "name" : "Smoke_Test_verifying_feed_3adcall",
+        "title" : "Verifying feed_3 ad call",
+        "time" : {
+          "start" : 1595355167225,
+          "stop" : 1595355167232,
+          "duration" : 7
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "33ad8fda3ddb08a6",
+        "name" : "Smoke_Test_verifying_feed_4adcall",
+        "title" : "Verifying feed_4 ad call",
+        "time" : {
+          "start" : 1595355167233,
+          "stop" : 1595355167243,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "c2dee464df3b26bb",
+        "name" : "Smoke_Test_verifying_feed_5adcall",
+        "title" : "Verifying feed_5 ad call",
+        "time" : {
+          "start" : 1595355167243,
+          "stop" : 1595355167252,
+          "duration" : 9
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "d14448c833a984d4",
+        "name" : "Smoke_Test_verifying_feed_6adcall",
+        "title" : "Verifying feed_6 ad call",
+        "time" : {
+          "start" : 1595355167252,
+          "stop" : 1595355167263,
+          "duration" : 11
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "b4e6bed3512ab4f9",
+        "name" : "Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall",
+        "title" : "Verifying iu value for maps details card",
+        "time" : {
+          "start" : 1595355167263,
+          "stop" : 1595355167271,
+          "duration" : 8
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "8c92fdaaf7b43b7f",
+        "name" : "Smoke_Test_Case_Verify_Video_adCalll",
+        "title" : "Verifying Video ad call",
+        "time" : {
+          "start" : 1595355167271,
+          "stop" : 1595355167281,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "fc5043344e994e6",
+        "name" : "Smoke_Test_CaseVerify_Today_details_page_iu",
+        "title" : "Verifying iu value Today details Page",
+        "time" : {
+          "start" : 1595355167281,
+          "stop" : 1595355167289,
+          "duration" : 8
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "b87bdd9261085d42",
+        "name" : "Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu",
+        "title" : "Verifying iu value for  Air Quality content page",
+        "time" : {
+          "start" : 1595355167289,
+          "stop" : 1595355167299,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "d641453f2ee5cac9",
+        "name" : "Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu",
+        "title" : "Verifying  iu value for Running content page",
+        "time" : {
+          "start" : 1595355167300,
+          "stop" : 1595355167310,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "13ff30d38a3d91d8",
+        "name" : "Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu",
+        "title" : "Verifying iu value for Boat&Beach content page",
+        "time" : {
+          "start" : 1595355167311,
+          "stop" : 1595355167321,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "f6c09e1c85714b1",
+        "name" : "Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu",
+        "title" : "Verifying iu value for Allergy content page",
+        "time" : {
+          "start" : 1595355167323,
+          "stop" : 1595355167332,
+          "duration" : 9
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "f6e8842cd1282e10",
+        "name" : "Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu",
+        "title" : "Verifying iu value for Cold&Flu content page",
+        "time" : {
+          "start" : 1595355167333,
+          "stop" : 1595355167346,
+          "duration" : 13
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "f6f0e5cef5e2ef02",
+        "name" : "Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu",
+        "title" : "Verifying iu value for outdoor conditions  detailed  page  iu",
+        "time" : {
+          "start" : 1595355167347,
+          "stop" : 1595355167360,
+          "duration" : 13
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "18beb00b6b702a8e",
+        "name" : "Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu",
+        "title" : "Verifying iu value for hourly1 bigad  detailpage",
+        "time" : {
+          "start" : 1595355176072,
+          "stop" : 1595355176078,
+          "duration" : 6
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "6a36d313ed3af53d",
+        "name" : "Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu",
+        "title" : "Verifying iu value for hourly2 bigad  detailpage",
+        "time" : {
+          "start" : 1595355176079,
+          "stop" : 1595355176089,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "f460c942e91574ab",
+        "name" : "Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu",
+        "title" : "Verifying iu value for hourly3 bigad  detailpage",
+        "time" : {
+          "start" : 1595355176090,
+          "stop" : 1595355176096,
+          "duration" : 6
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "3f6c227576210b96",
+        "name" : "Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario",
+        "title" : "Verifying  home screen marquee call pull to refrersh scenario",
+        "time" : {
+          "start" : 1595355184678,
+          "stop" : 1595355184688,
+          "duration" : 10
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "47e1f19ab4f8e34d",
+        "name" : "Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario",
+        "title" : "Verifying bcp.crwdcntrl call",
+        "time" : {
+          "start" : 1595355184688,
+          "stop" : 1595355184697,
+          "duration" : 9
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "5012baf82c745c0b",
+        "name" : "Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario",
+        "title" : "Verifying  home screen marquee call when user enter new location",
+        "time" : {
+          "start" : 1595355193264,
+          "stop" : 1595355193276,
+          "duration" : 12
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    }, {
+      "uid" : "332ee70a24ae8581",
+      "failure" : {
+        "message" : "SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n*** Element info: {Using=accessibility id, value=Hourly}",
+        "stackTrace" : "org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n*** Element info: {Using=accessibility id, value=Hourly}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)\n\tat io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)\n\tat twc.Automation.HandleWithApp.AppFunctions.click_hourly_element(AppFunctions.java:2140)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:497)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "85ff013c7aebf945",
+        "name" : "Smoke_Test_Verify_hourly_detailpage_adcall_iu",
+        "title" : "Verifying iu value for hourly detailpage",
+        "time" : {
+          "start" : 1595355167361,
+          "stop" : 1595355176071,
+          "duration" : 8710
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    }, {
+      "uid" : "ecbffd831af04aaa",
+      "failure" : {
+        "message" : "SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356",
+        "stackTrace" : "org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)\n\tat io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)\n\tat twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:919)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1_pulltoreresh_scenario(smokeTestCases.java:597)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "ff30e187854e7f04",
+        "name" : "Smoke_Test_Verifying_feed1_pulltoreresh_scenario",
+        "title" : "Verifying  feed_1 ad call pull to refrersh scenario",
+        "time" : {
+          "start" : 1595355176098,
+          "stop" : 1595355184677,
+          "duration" : 8579
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    }, {
+      "uid" : "9e035f191dd03ce6",
+      "failure" : {
+        "message" : "SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 8 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n*** Element info: {Using=accessibility id, value=Search}",
+        "stackTrace" : "org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 8 milliseconds\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'AswinikumarsMBP.lan', ip: '192.168.1.15', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 86463015-a0d9-418d-8e66-b322ef410356\n*** Element info: {Using=accessibility id, value=Search}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)\n\tat io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)\n\tat twc.Automation.HandleWithApp.AppFunctions.enter_requiredLocation(AppFunctions.java:2506)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario(smokeTestCases.java:662)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+      },
+      "testCases" : [ {
+        "uid" : "a977d42a3d38a042",
+        "name" : "Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario",
+        "title" : "Verifying feed_1 ad call when user enter new location",
+        "time" : {
+          "start" : 1595355184697,
+          "stop" : 1595355193263,
+          "duration" : 8566
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}

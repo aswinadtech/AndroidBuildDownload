@@ -1,0 +1,608 @@
+{
+  "testCases" : [ {
+    "uid" : "315e0b2ff8fe3195",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed6_adcall",
+    "title" : "Verifying amazon  Slot Id for feed6 ad call",
+    "time" : {
+      "start" : 1595355005289,
+      "stop" : 1595355005293,
+      "duration" : 4
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "b4177bb428f6e656",
+    "name" : "Smoke_Test_amazon_aax_Daily_day1_preroll_adcall",
+    "title" : "Verifying amazon Slot Id for daily details day1 preroll ad calll",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "b22b108344319ae4",
+    "name" : "Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall",
+    "title" : "Verifying amazon Slot Id for hourly3 big ad detailspagel",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "c4959ddd60ff1cf8",
+    "name" : "Smoke_Test_Verify_amazon_SlotId_outdoor_details",
+    "title" : "Verifying amazon slot Id for Outdoor details page",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "c8525ef0b42f14a",
+    "name" : "Smoke_Test_Verify_News_detailpage_adcall_iu",
+    "title" : "Verifying iu value for news detailpage ad call iu",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "3fee646479f67e06",
+    "name" : "Smoke_Test_amazon_aax_Airquality_deatailcard",
+    "title" : "Verifying amazon aax for AQ details page",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "c450aa4083c23d67",
+    "name" : "Smoke_Test_amazon_aax_mapsdetails_adcall",
+    "title" : "Verifying amazon Slot Id for maps details preroll ad cal",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "7d96ff9443878c4b",
+    "name" : "Smoke_Test_amazon_aax_today_deatailcard",
+    "title" : "Verifying amazon aax for today details card",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "dbd24c36d43453da",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed1_preroladcall",
+    "title" : "Verifying amazon Slot Id for feed1 prerol ad call",
+    "time" : {
+      "start" : 1595355005294,
+      "stop" : 1595355005294,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "bb405a9767a3f6c9",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed3_preroladcall",
+    "title" : "Verifying amazon Slot Id for feed3 prerol ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "3719d352f09d6d1a",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed3_adcall",
+    "title" : "Verifying amazon  Slot Id for feed3 ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "b8605c43cec16121",
+    "name" : "Smoke_Test_amazon_aax_Hourly_preroll_adcall",
+    "title" : "Verifying amazon Slot Id for hourly details preroll ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "2d77faa2367b044f",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed2_adcall",
+    "title" : "Verifying amazon  Slot Id for feed2 ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "9f131e5f45a32e62",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed4_adcall",
+    "title" : "Verifying amazon  Slot Id for feed4 ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "6f1552f6b48b575",
+    "name" : "Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall",
+    "title" : "Verifying amazon Slot Id for hourly1 big ad detailspage",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "a611b52d9271d0b0",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed5_adcall",
+    "title" : "Verifying amazon  Slot Id for feed5 ad call",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "ca3fd345088d173a",
+    "name" : "Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall",
+    "title" : "Verifying amazon Slot Id for hourly2 big ad detailspage",
+    "time" : {
+      "start" : 1595355005295,
+      "stop" : 1595355005295,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "c81dca85522ab91a",
+    "name" : "Smoke_Test_Verify_amazon_aax_News_adcall",
+    "title" : "Verifying amazon axx slot for new article",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "4b3d5433933f3a81",
+    "name" : "Smoke_Test_amazon_aax_Hourly_details_adcall",
+    "title" : "Verifying amazon Slot Id for hourly details ad call",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "a4e7d44e073cda55",
+    "name" : "Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad",
+    "title" : "Verifying amazon slot Id for Running Bigbanner ad",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "d7136ecebc62ebf2",
+    "name" : "Smoke_Test_amazon_aaxSlot_feed2_preroladcall",
+    "title" : "Verifying amazon Slot Id for feed2 prerol ad call",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "5a7d01ca9adce57f",
+    "name" : "Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad",
+    "title" : "Verifying amazon slot Id for Allergy Bigbanner ad",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "2d27e8d3ddf0a28e",
+    "name" : "Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad",
+    "title" : "Verifying amazon slot Id for Cold&Flu Bigbanner ad",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "7f425f167bc9196a",
+    "name" : "Smoke_Test_amazon_aax_mapsdetails_preload_adcall",
+    "title" : "Verifying amazon Slot Id for maps details preroll ad cal",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "50e2783ffb9b6926",
+    "name" : "Smoke_Test_amazon_aax_video_adcall",
+    "title" : "Verifying amazon Slot Id  video ad call",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "2b5afa58fb798e70",
+    "name" : "Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad",
+    "title" : "Verifying amazon slot Id  for Boat&Beach Bigbanner ad",
+    "time" : {
+      "start" : 1595355005296,
+      "stop" : 1595355005296,
+      "duration" : 0
+    },
+    "severity" : "NORMAL",
+    "status" : "PENDING"
+  }, {
+    "uid" : "1278e70c7442f999",
+    "name" : "Smoke_Test_CaseVerify_WeatherFXAPI_url",
+    "title" : "Verifying wfxtg trigger api call url",
+    "time" : {
+      "start" : 1595355130087,
+      "stop" : 1595355157887,
+      "duration" : 27800
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e761f5e2d238762b",
+    "name" : "Smoke_Test_CaseVerify_Factualapi_url",
+    "title" : "Verifying Location/Factual  api call url",
+    "time" : {
+      "start" : 1595355157895,
+      "stop" : 1595355157995,
+      "duration" : 100
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "a5ee47fa8bb7e952",
+    "name" : "Smoke_Test_CaseVerify_turbo_url",
+    "title" : "Verifying turbo call api url",
+    "time" : {
+      "start" : 1595355157996,
+      "stop" : 1595355158104,
+      "duration" : 108
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "ddb49ca7f5c6edb0",
+    "name" : "Smoke_Test_CaseVerify_adcrwdcntrlnet_url",
+    "title" : "Verifying Lotame adcrw api call url",
+    "time" : {
+      "start" : 1595355158107,
+      "stop" : 1595355158260,
+      "duration" : 153
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "f4068fce311d2d03",
+    "name" : "Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu",
+    "title" : "Verifying Home screen marquee ad call",
+    "time" : {
+      "start" : 1595355158261,
+      "stop" : 1595355158411,
+      "duration" : 150
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "a0904d34e95d6f9",
+    "name" : "Smoke_Test_verifying_feed_1adcall",
+    "title" : "Verifying feed_1 ad call",
+    "time" : {
+      "start" : 1595355158412,
+      "stop" : 1595355158508,
+      "duration" : 96
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "268ed2743c23db04",
+    "name" : "Smoke_Test_verifying_feed_2adcall",
+    "title" : "Verifying feed_2 ad call",
+    "time" : {
+      "start" : 1595355158508,
+      "stop" : 1595355167224,
+      "duration" : 8716
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "b0abd02e2c630dd2",
+    "name" : "Smoke_Test_verifying_feed_3adcall",
+    "title" : "Verifying feed_3 ad call",
+    "time" : {
+      "start" : 1595355167225,
+      "stop" : 1595355167232,
+      "duration" : 7
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "33ad8fda3ddb08a6",
+    "name" : "Smoke_Test_verifying_feed_4adcall",
+    "title" : "Verifying feed_4 ad call",
+    "time" : {
+      "start" : 1595355167233,
+      "stop" : 1595355167243,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "c2dee464df3b26bb",
+    "name" : "Smoke_Test_verifying_feed_5adcall",
+    "title" : "Verifying feed_5 ad call",
+    "time" : {
+      "start" : 1595355167243,
+      "stop" : 1595355167252,
+      "duration" : 9
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "d14448c833a984d4",
+    "name" : "Smoke_Test_verifying_feed_6adcall",
+    "title" : "Verifying feed_6 ad call",
+    "time" : {
+      "start" : 1595355167252,
+      "stop" : 1595355167263,
+      "duration" : 11
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "b4e6bed3512ab4f9",
+    "name" : "Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall",
+    "title" : "Verifying iu value for maps details card",
+    "time" : {
+      "start" : 1595355167263,
+      "stop" : 1595355167271,
+      "duration" : 8
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "8c92fdaaf7b43b7f",
+    "name" : "Smoke_Test_Case_Verify_Video_adCalll",
+    "title" : "Verifying Video ad call",
+    "time" : {
+      "start" : 1595355167271,
+      "stop" : 1595355167281,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "fc5043344e994e6",
+    "name" : "Smoke_Test_CaseVerify_Today_details_page_iu",
+    "title" : "Verifying iu value Today details Page",
+    "time" : {
+      "start" : 1595355167281,
+      "stop" : 1595355167289,
+      "duration" : 8
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "b87bdd9261085d42",
+    "name" : "Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu",
+    "title" : "Verifying iu value for  Air Quality content page",
+    "time" : {
+      "start" : 1595355167289,
+      "stop" : 1595355167299,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "d641453f2ee5cac9",
+    "name" : "Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu",
+    "title" : "Verifying  iu value for Running content page",
+    "time" : {
+      "start" : 1595355167300,
+      "stop" : 1595355167310,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "13ff30d38a3d91d8",
+    "name" : "Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu",
+    "title" : "Verifying iu value for Boat&Beach content page",
+    "time" : {
+      "start" : 1595355167311,
+      "stop" : 1595355167321,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "f6c09e1c85714b1",
+    "name" : "Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu",
+    "title" : "Verifying iu value for Allergy content page",
+    "time" : {
+      "start" : 1595355167323,
+      "stop" : 1595355167332,
+      "duration" : 9
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "f6e8842cd1282e10",
+    "name" : "Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu",
+    "title" : "Verifying iu value for Cold&Flu content page",
+    "time" : {
+      "start" : 1595355167333,
+      "stop" : 1595355167346,
+      "duration" : 13
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "f6f0e5cef5e2ef02",
+    "name" : "Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu",
+    "title" : "Verifying iu value for outdoor conditions  detailed  page  iu",
+    "time" : {
+      "start" : 1595355167347,
+      "stop" : 1595355167360,
+      "duration" : 13
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "85ff013c7aebf945",
+    "name" : "Smoke_Test_Verify_hourly_detailpage_adcall_iu",
+    "title" : "Verifying iu value for hourly detailpage",
+    "time" : {
+      "start" : 1595355167361,
+      "stop" : 1595355176071,
+      "duration" : 8710
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "18beb00b6b702a8e",
+    "name" : "Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu",
+    "title" : "Verifying iu value for hourly1 bigad  detailpage",
+    "time" : {
+      "start" : 1595355176072,
+      "stop" : 1595355176078,
+      "duration" : 6
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "6a36d313ed3af53d",
+    "name" : "Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu",
+    "title" : "Verifying iu value for hourly2 bigad  detailpage",
+    "time" : {
+      "start" : 1595355176079,
+      "stop" : 1595355176089,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "f460c942e91574ab",
+    "name" : "Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu",
+    "title" : "Verifying iu value for hourly3 bigad  detailpage",
+    "time" : {
+      "start" : 1595355176090,
+      "stop" : 1595355176096,
+      "duration" : 6
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "ff30e187854e7f04",
+    "name" : "Smoke_Test_Verifying_feed1_pulltoreresh_scenario",
+    "title" : "Verifying  feed_1 ad call pull to refrersh scenario",
+    "time" : {
+      "start" : 1595355176098,
+      "stop" : 1595355184677,
+      "duration" : 8579
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "3f6c227576210b96",
+    "name" : "Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario",
+    "title" : "Verifying  home screen marquee call pull to refrersh scenario",
+    "time" : {
+      "start" : 1595355184678,
+      "stop" : 1595355184688,
+      "duration" : 10
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "47e1f19ab4f8e34d",
+    "name" : "Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario",
+    "title" : "Verifying bcp.crwdcntrl call",
+    "time" : {
+      "start" : 1595355184688,
+      "stop" : 1595355184697,
+      "duration" : 9
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "a977d42a3d38a042",
+    "name" : "Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario",
+    "title" : "Verifying feed_1 ad call when user enter new location",
+    "time" : {
+      "start" : 1595355184697,
+      "stop" : 1595355193263,
+      "duration" : 8566
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "5012baf82c745c0b",
+    "name" : "Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario",
+    "title" : "Verifying  home screen marquee call when user enter new location",
+    "time" : {
+      "start" : 1595355193264,
+      "stop" : 1595355193276,
+      "duration" : 12
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  } ]
+}

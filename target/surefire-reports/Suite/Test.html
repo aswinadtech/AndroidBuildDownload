@@ -1,0 +1,1371 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/26/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 21 23:40:05 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>188 seconds (188085 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url()'><b>Smoke_Test_CaseVerify_Factualapi_url</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred
+	at twc.Automation.General.Functions.validating_Fatual(Functions.java:3020)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url(smokeTestCases.java:70)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114236200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114236200'><pre>java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.validating_Fatual(Functions.java:3020)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url(smokeTestCases.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3466)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu(smokeTestCases.java:95)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace949521784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace949521784'><pre>java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3466)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Homescreen_marquee_ad_iu(smokeTestCases.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall()'><b>Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_card_iu_value(Functions.java:2376)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(smokeTestCases.java:296)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace714551975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace714551975'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_card_iu_value(Functions.java:2376)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(smokeTestCases.java:296)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu()'><b>Smoke_Test_CaseVerify_Today_details_page_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Today_detail_page_iu_value(Functions.java:2471)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu(smokeTestCases.java:351)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace154102502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154102502'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Today_detail_page_iu_value(Functions.java:2471)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu(smokeTestCases.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll()'><b>Smoke_Test_Case_Verify_Video_adCalll</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_VideoCard_iu_value(Functions.java:2353)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll(smokeTestCases.java:315)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1999779495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1999779495'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_VideoCard_iu_value(Functions.java:2353)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll(smokeTestCases.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu()'><b>Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.AirQuality_detailed_adcall_iu(Functions.java:2679)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu(smokeTestCases.java:370)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace968200061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace968200061'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.AirQuality_detailed_adcall_iu(Functions.java:2679)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu(smokeTestCases.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu()'><b>Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_SH_detailpage_adcall_iu(Functions.java:4670)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(smokeTestCases.java:473)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473885540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473885540'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_SH_detailpage_adcall_iu(Functions.java:4670)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(smokeTestCases.java:473)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu()'><b>Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Allergy_detailpage_adcall_iu(Functions.java:2614)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu(smokeTestCases.java:433)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610511340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace610511340'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Allergy_detailpage_adcall_iu(Functions.java:2614)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_iu(smokeTestCases.java:433)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu()'><b>Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Boat_beach_detailpage_adcall_iu(Functions.java:2592)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu(smokeTestCases.java:413)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1298690816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1298690816'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Boat_beach_detailpage_adcall_iu(Functions.java:2592)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_contenPage_adcall_iu(smokeTestCases.java:413)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu()'><b>Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Running_spotlight_adcall_iu(Functions.java:2553)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu(smokeTestCases.java:393)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1562530664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562530664'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Running_spotlight_adcall_iu(Functions.java:2553)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu(smokeTestCases.java:393)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu()'><b>Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu(Functions.java:2636)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu(smokeTestCases.java:453)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762121462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace762121462'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu(Functions.java:2636)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_iu(smokeTestCases.java:453)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu()'><b>Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad1_adcall_iu(Functions.java:2765)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu(smokeTestCases.java:526)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1430925564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1430925564'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad1_adcall_iu(Functions.java:2765)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu(smokeTestCases.java:526)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu()'><b>Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad2_adcall_iu(Functions.java:2787)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu(smokeTestCases.java:551)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2068780306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2068780306'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad2_adcall_iu(Functions.java:2787)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu(smokeTestCases.java:551)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu()'><b>Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad3_adcall_iu(Functions.java:2809)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu(smokeTestCases.java:573)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638696823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638696823'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad3_adcall_iu(Functions.java:2809)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu(smokeTestCases.java:573)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu()'><b>Smoke_Test_Verify_hourly_detailpage_adcall_iu</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Hourly}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.click_hourly_element(AppFunctions.java:2140)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:497)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2036699109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2036699109'><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Hourly}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.click_hourly_element(AppFunctions.java:2140)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>8</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario()'><b>Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Search}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.enter_requiredLocation(AppFunctions.java:2506)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario(smokeTestCases.java:662)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1897989813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897989813'><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+*** Element info: {Using=accessibility id, value=Search}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByAccessibilityId(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAccessibilityId(AndroidDriver.java:1)
+	at twc.Automation.HandleWithApp.AppFunctions.enter_requiredLocation(AppFunctions.java:2506)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario(smokeTestCases.java:662)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>8</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1_pulltoreresh_scenario()'><b>Smoke_Test_Verifying_feed1_pulltoreresh_scenario</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)
+	at twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:919)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1_pulltoreresh_scenario(smokeTestCases.java:597)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1819049701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819049701'><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)
+	at twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:919)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_feed1_pulltoreresh_scenario(smokeTestCases.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>8</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario()'><b>Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario(smokeTestCases.java:674)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace117902049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace117902049'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario(smokeTestCases.java:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario()'><b>Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:613)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace656400047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace656400047'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3455)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:613)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario()'><b>Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:3721)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario(smokeTestCases.java:623)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172954825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172954825'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:3721)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario(smokeTestCases.java:623)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_1adcall()'><b>Smoke_Test_verifying_feed_1adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5611)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_1adcall(smokeTestCases.java:105)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace941390058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941390058'><pre>java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5611)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_1adcall(smokeTestCases.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_2adcall()'><b>Smoke_Test_verifying_feed_2adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.getSize(RemoteWebDriver.java:914)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.Swipe_feed(AppiumFunctions.java:942)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.SwipeUp_Counter_feedcards(AppiumFunctions.java:810)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_2adcall(smokeTestCases.java:195)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729548513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729548513'><pre>org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;AswinikumarsMBP.lan&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=11.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=11, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=30, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/app-google-debug-711.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 86463015-a0d9-418d-8e66-b322ef410356
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.getSize(RemoteWebDriver.java:914)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.Swipe_feed(AppiumFunctions.java:942)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.SwipeUp_Counter_feedcards(AppiumFunctions.java:810)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_2adcall(smokeTestCases.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>8</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adcall()'><b>Smoke_Test_verifying_feed_3adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adcall(smokeTestCases.java:218)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1882742449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1882742449'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adcall(smokeTestCases.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall()'><b>Smoke_Test_verifying_feed_4adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall(smokeTestCases.java:237)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1806847457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1806847457'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall(smokeTestCases.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adcall()'><b>Smoke_Test_verifying_feed_5adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adcall(smokeTestCases.java:256)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace865600325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace865600325'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adcall(smokeTestCases.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_6adcall()'><b>Smoke_Test_verifying_feed_6adcall</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td><div><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_6adcall(smokeTestCases.java:275)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1626919820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1626919820'><pre>java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.verifying_feedcalls(Functions.java:5560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_6adcall(smokeTestCases.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_WeatherFXAPI_url()'><b>Smoke_Test_CaseVerify_WeatherFXAPI_url</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td></td>
+<td>27</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_adcrwdcntrlnet_url()'><b>Smoke_Test_CaseVerify_adcrwdcntrlnet_url</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+<tr>
+<td title='twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_turbo_url()'><b>Smoke_Test_CaseVerify_turbo_url</b><br>Test class: twc.Automation.SmokeTestCases.smokeTestCases</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.SmokeTestCases.smokeTestCases@51d143a1</td></tr>
+</table><p>
+</body>
+</html>

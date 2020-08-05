@@ -1,0 +1,50 @@
+{
+  "uid" : "50e2783ffb9b6926",
+  "name" : "Smoke_Test_amazon_aax_video_adcall",
+  "title" : "Verifying amazon Slot Id  video ad call",
+  "time" : {
+    "start" : 1595355005296,
+    "stop" : 1595355005296,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Test not implemented yet",
+    "stackTrace" : "There are no stack trace"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PENDING",
+  "suite" : {
+    "uid" : "c4b5dc5b8219ed6c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "18698@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,89 @@
+{
+  "uid" : "ddb49ca7f5c6edb0",
+  "name" : "Smoke_Test_CaseVerify_adcrwdcntrlnet_url",
+  "title" : "Verifying Lotame adcrw api call url",
+  "time" : {
+    "start" : 1595355158107,
+    "stop" : 1595355158260,
+    "duration" : 153
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "c4b5dc5b8219ed6c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[checking for  https://ad.crwdcntrl.net url]",
+    "title" : "checking for  https://ad.crwdcntrl.net url",
+    "time" : {
+      "start" : 1595355158256,
+      "stop" : 1595355158256,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[https://ad.crwdcntrl.net/ url was trigred]",
+    "title" : "https://ad.crwdcntrl.net/ url was trigred",
+    "time" : {
+      "start" : 1595355158258,
+      "stop" : 1595355158258,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_adcrwdcntrlnet_url"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "18698@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}
