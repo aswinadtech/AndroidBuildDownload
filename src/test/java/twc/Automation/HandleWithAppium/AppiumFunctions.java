@@ -452,6 +452,8 @@ public class AppiumFunctions extends Drivers{
      	
     	public static void installapk() throws Exception
      	{
+    		System.out.println("clicking the The weather channel release debug");
+    		logStep("clicking the The weather channel release debug");
     		List<WebElement> apptypes=Ad.findElementsById("dev.firebase.appdistribution:id/app_name");
     		for(WebElement apptype:apptypes) {
     			if(apptype.getText().contains("The Weather Channel ReleaseDEBUG")) {
@@ -459,8 +461,13 @@ public class AppiumFunctions extends Drivers{
     				Thread.sleep(20000);
     			}
     		}
+
+    		System.out.println("clicking the the download button");
+    		logStep("clicking the the download button");
     		Ad.findElementById("dev.firebase.appdistribution:id/download_button").click();
 			Thread.sleep(20000);
+    		System.out.println("clicking the the install button");
+    		logStep("clicking the the install button");
 			Ad.findElementById("android:id/button1").click();
 			Thread.sleep(60000);
 			Thread.sleep(60000);

@@ -1,5 +1,6 @@
 package twc.Automation.SmokeTestCases;
 
+import org.testng.annotations.Test;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -68,17 +69,17 @@ public class ApkDowload extends Drivers {
 	}
 	  
 	
-	/*@BeforeTest
+	@BeforeTest
 	public void Before_Test() throws Exception {
 		System.out.println("================= Before Test Started =========================");
 		
 		  //CharlesFunctions.app_download_from_firebaselink();
-		AppiumFunctions.LaunchAppWithFullReset();
-		Thread.sleep(20000);
+		//AppiumFunctions.LaunchAppWithFullReset();
+		//Thread.sleep(20000);
 
 		System.out.println("================= Before Test End =========================");
 
-	}*/
+	}
 
 	
 
