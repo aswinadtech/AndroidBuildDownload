@@ -468,7 +468,7 @@ public class AppiumFunctions extends Drivers{
 			Thread.sleep(120000);
     		System.out.println("clicking the the install button");
     		logStep("clicking the the install button");
-			Ad.findElementById("android:id/button1").click();
+			Ad.findElementById("com.android.packageinstaller:id/ok_button").click();
 			Thread.sleep(60000);
 		
      	}
