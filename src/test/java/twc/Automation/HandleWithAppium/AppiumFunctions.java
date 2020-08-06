@@ -423,7 +423,7 @@ public class AppiumFunctions extends Drivers{
 
     				//capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
     				capabilities.setCapability("platformName", "Android"); 
-    				capabilities.setCapability("platformVersion", "11.0");
+    				capabilities.setCapability("platformVersion", "8.0");
     				capabilities.setCapability("deviceName", "Samsung"); 
     				capabilities.setCapability("noReset","true");
     			//	capabilities.setCapability("app",app.getAbsolutePath() );
