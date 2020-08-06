@@ -452,14 +452,36 @@ public class AppiumFunctions extends Drivers{
      	
     	public static void installapk() throws Exception
      	{
+    		try {
+    			System.out.println("chekcing for Firebasre App is properly launched or not on the device");
+    			logStep("chekcing for Firebasre App is properly launched or not on the device");
+    			Ad.findElementById("dev.firebase.appdistribution:id/retry_list_button").click();
+    			Thread.sleep(30000);
+    			System.out.println("Clicked the Retry button on the device");
+    			System.out.println("Clicked the Retry button on the device");
+    	
+    		}
+    		catch(Exception e) {
+    			
+    		}
     		System.out.println("clicking the The weather channel release debug");
     		logStep("clicking the The weather channel release debug");
     		List<WebElement> apptypes=Ad.findElementsById("dev.firebase.appdistribution:id/app_name");
     		for(WebElement apptype:apptypes) {
     			if(apptype.getText().contains("The Weather Channel ReleaseDEBUG")) {
     				apptype.click();
-    				Thread.sleep(20000);
+    				Thread.sleep(30000);
     			}
+    		}
+    		try {
+    			Ad.findElementById("dev.firebase.appdistribution:id/retry_list_button").click();
+    			Thread.sleep(30000);
+    			System.out.println("Clicked the Retry button on the device");
+    			System.out.println("Clicked the Retry button on the device");
+    	
+    		}
+    		catch(Exception e) {
+    			
     		}
 
     		System.out.println("clicking the the download button");
