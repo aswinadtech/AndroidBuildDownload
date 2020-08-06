@@ -434,7 +434,7 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability("newCommandTimeout","10000");
     				capabilities.setCapability("autoLaunch","true");    				
     				Thread.sleep(5000);    				
-    				Ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+    				Ad = new AndroidDriver(new URL("http://127.0.0.1:4727/wd/hub"), capabilities);
     				Thread.sleep(50000);
     				  /* ---End Android Device Capabilities --- */
         			Ad.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
